@@ -207,12 +207,12 @@ const findUsersByWeight = (users, weight) => {
 // 5. Encontre os usuários de um dado estado ou que são casados;
 
 const findUserFromCityAndIfIsMarried = (users, city) => {
-    const result = users.filter((e) => e.city === city && e.married == true)
+    const result= users.filter((e) => e.city === city || e.married == true)
 
     return result
 }
 
-// console.log(findUserFromCityAndIfIsMarried(users, 'Rio de Janeiro'))
+console.log(findUserFromCityAndIfIsMarried(users, 'São Paulo'))
   
 // 6. Cria uma função que recebe a lista de usuários e retorna
 // uma lista com o IMC dos respectivos usuários;
